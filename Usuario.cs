@@ -1,8 +1,8 @@
 ﻿using System;
+public class Usuario {
+	int id;
+	string nome;
+	string email;
+	string senha;
 
-public class Class1
-{
-	public Class1()
-	{
-	}
 }

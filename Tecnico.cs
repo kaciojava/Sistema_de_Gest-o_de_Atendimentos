@@ -1,8 +1,6 @@
 ﻿using System;
-
-public class Class1
-{
-	public Class1()
-	{
-	}
+public class Tecnico : Usuario{
+	string especialidade;
+	string registro;
+	
 }
