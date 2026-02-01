@@ -1,6 +1,12 @@
 ﻿using System;
+====
+public class HistoricoChamado {
+    public DateTime Data { get; private set; }
+    public string Descricao { get; private set; }
 
-public class HistoricoChamado
-{
-    
+    public HistoricoChamado(string descricao)
+    {
+        Data = DateTime.Now;
+        Descricao = descricao;
+    }
 }
