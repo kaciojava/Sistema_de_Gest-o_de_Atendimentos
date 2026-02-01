@@ -1,8 +1,6 @@
 ﻿using System;
 
-public class Class1
+public class Cliente : Usuario
 {
-	public Class1()
-	{
-	}
+    string endereco;
 }
