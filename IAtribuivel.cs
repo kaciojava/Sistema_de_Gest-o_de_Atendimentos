@@ -1,6 +1,9 @@
 ﻿using System;
 
-public interface IAtribuivel
+namespace Sistema_de_Gest_o_de_Atendimentos
 {
-    void AtribuirTecnico(Tecnico tecnico);
+    public interface IAtribuivel
+    {
+        void AtribuirTecnico(Tecnico tecnico);
+    }
 }

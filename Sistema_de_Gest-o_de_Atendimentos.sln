@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema_de_Gest-o_de_Atendimentos", "Sistema_de_Gest-o_de_Atendimentos.csproj", "{B0276125-BBC7-0B80-6B06-AD4F143799A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0276125-BBC7-0B80-6B06-AD4F143799A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0276125-BBC7-0B80-6B06-AD4F143799A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0276125-BBC7-0B80-6B06-AD4F143799A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0276125-BBC7-0B80-6B06-AD4F143799A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27143CCD-F583-493C-95C0-9F9DA4C4AC28}
+	EndGlobalSection
+EndGlobal

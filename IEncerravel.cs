@@ -1,6 +1,9 @@
 ﻿using System;
 
-public interface IEncerravel
+namespace Sistema_de_Gest_o_de_Atendimentos
 {
-    void Encerrar();
+    public interface IEncerravel
+    {
+        void Encerrar(string motivo);
+    }
 }
