@@ -2,6 +2,7 @@
 
 namespace Sistema_de_Gest_o_de_Atendimentos
 {
+    // Herança
     public class Cliente : Usuario
     {
         public string Endereco { get; set; }

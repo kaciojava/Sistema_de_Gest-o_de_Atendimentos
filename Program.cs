@@ -7,6 +7,7 @@ namespace Sistema_de_Gest_o_de_Atendimentos
 {
     class Program
     {
+     
         static List<Chamado> listaChamados = new List<Chamado>();
         static ChamadoService service = new ChamadoService();
         static string tipoUsuarioLogado = ""; // "Tecnico" ou "Cliente"
@@ -73,10 +74,13 @@ namespace Sistema_de_Gest_o_de_Atendimentos
             Console.Write("Descrição do problema: ");
             string desc = Console.ReadLine() ?? "Sem descrição";
 
-            Categoria cat = new Categoria("Suporte Geral");
+            Console.Write("Categoria do problema: ");
+            String nomeCat = Console.ReadLine() ?? "Geral";
+            Categoria objetoCategoria = new Categoria(nomeCat);
 
             // criando o Chamado com os 4 parâmetros obrigatórios
-            Chamado novo = new Chamado(listaChamados.Count + 1, desc, cliente, cat);
+            Chamado novo = new Chamado(listaChamados.Count + 1, desc, cliente, objetoCategoria);
+
 
             listaChamados.Add(novo);
             service.RegistrarChamado(novo);
@@ -133,10 +137,10 @@ namespace Sistema_de_Gest_o_de_Atendimentos
 
         static void Listar()
         {
-            Console.WriteLine("\nID | CLIENTE | DESCRIÇÃO | STATUS");
+            Console.WriteLine("\nID | CLIENTE | DESCRIÇÃO | CATEGORIA | STATUS");
             foreach (var c in listaChamados)
             {
-                Console.WriteLine($"{c.Id} | {c.Cliente.Nome} | {c.Descricao} | {c.Status}");
+                Console.WriteLine($"{c.Id} | {c.Cliente.Nome} | {c.Descricao} |{c.Categoria.Nome}| {c.Status}");
             }
             if (tipoUsuarioLogado == "Cliente") Console.ReadKey();
         }

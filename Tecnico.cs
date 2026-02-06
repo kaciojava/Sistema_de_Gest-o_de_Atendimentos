@@ -1,5 +1,6 @@
 ﻿namespace Sistema_de_Gest_o_de_Atendimentos
 {
+    //HERANÇA
     public class Tecnico : Usuario
     {
         public string Especialidade { get; set; }

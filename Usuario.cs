@@ -1,5 +1,5 @@
 ﻿using System;
-
+// Classe "MÃE"
 namespace Sistema_de_Gest_o_de_Atendimentos
 {
     // Abstração

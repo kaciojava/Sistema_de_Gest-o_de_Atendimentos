@@ -10,7 +10,7 @@ namespace Sistema_de_Gest_o_de_Atendimentos
         public string Status { get; private set; }
         public Categoria Categoria { get; set; }
         public Cliente Cliente { get; set; }
-        public Tecnico TecnicoResponsavel { get; private set; }
+        public Tecnico? TecnicoResponsavel { get; private set; }
 
         // encapsulamento: a lista não pode ser modificada diretamente de fora
         private List<HistoricoChamado> _historico = new List<HistoricoChamado>();
@@ -42,3 +42,4 @@ namespace Sistema_de_Gest_o_de_Atendimentos
         }
     }
 }
+//xd:D

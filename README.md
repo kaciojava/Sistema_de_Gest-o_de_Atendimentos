@@ -6,38 +6,36 @@ Este projeto é uma solução de **backend robusta** desenvolvida em **C#**, foc
 * **[ERIVELTON KÁCIO]** - [https://github.com/kaciojava]
 * **[SANDERSON PEREIRA]** - [https://github.com/Snzada]
 
+
 ---
 
 ## 📊 Diagrama de Classes (UML)
-O sistema foi modelado para garantir **baixo acoplamento** e **alta coesão**.
+O diagrama abaixo reflete a arquitetura do sistema, destacando o uso de serviços e interfaces para desacoplamento.
 
-
-
----
-
-## 🧠 Conceitos de Orientação a Objetos Aplicados
-
-* **Classes Abstratas:** A classe **`Usuario`** é definida como **abstrata**, servindo como modelo base e impedindo instâncias diretas.
-* **Herança:** As classes **`Cliente`** e **`Tecnico`** estendem **`Usuario`**, herdando atributos como `Id` e `Nome`.
-* **Interfaces:** Uso das interfaces obrigatórias **`IAtribuivel`** e **`IEncerravel`** para padronizar comportamentos específicos.
-* **Composição:** A classe **`Chamado`** possui uma lista de **`HistoricoChamado`**, garantindo a rastreabilidade total do atendimento.
-* **Encapsulamento:** Propriedades com **`private set`** protegem o estado interno do objeto contra alterações indevidas.
+![Diagrama UML](Diagrama.drawio.png)
 
 ---
 
-## 💎 Princípios SOLID Implementados
+## 💎 Aplicação dos Princípios SOLID
 
-* **[S] - Single Responsibility:** A classe **`Chamado`** armazena dados, enquanto a **`ChamadoService`** gerencia as regras de negócio.
-* **[O] - Open/Closed:** O sistema suporta novas categorias ou usuários sem modificar o código existente.
-* **[L] - Liskov Substitution:** **`Cliente`** e **`Tecnico`** podem substituir **`Usuario`** em qualquer parte da lógica sem causar erros.
-* **[I] - Interface Segregation:** Utilizamos **interfaces granulares** em vez de uma única interface genérica.
-* **[D] - Dependency Inversion:** O serviço de chamados depende de **abstrações (interfaces)**, facilitando a manutenção e escalabilidade.
+* **[S] Single Responsibility:** A classe **`Chamado`** armazena dados e histórico, enquanto a **`ChamadoService`** isola as regras de negócio e manipulação de listas.
+* **[O] Open/Closed:** Novas categorias ou tipos de usuários podem ser adicionados via herança sem modificar o funcionamento do `ChamadoService`.
+* **[L] Liskov Substitution:** As classes **`Cliente`** e **`Tecnico`** herdam de **`Usuario`** e podem ser utilizadas em qualquer lugar que a classe base seja esperada.
+* **[I] Interface Segregation:** Dividimos as ações em interfaces específicas: **`IAtribuivel`** para designação de técnicos e **`IEncerravel`** para conclusão de chamados.
+* **[D] Dependency Inversion:** O método `AlocarTecnico` do serviço depende da interface **`IAtribuivel`**, não de uma implementação concreta, garantindo flexibilidade ao código.
+
+---
+
+## 🧠 Conceitos de OO Utilizados
+* **Classe Abstrata:** `Usuario` define o contrato base para todos os perfis do sistema.
+* **Composição:** `Chamado` contém uma lista de `HistoricoChamado`, que é destruída junto com o objeto principal.
+* **Encapsulamento:** Uso de modificadores `private set` para garantir a integridade do `Status` do chamado.
 
 ---
 
 ## 🚀 Tecnologias e Execução
 * **Linguagem:** **C# (.NET 8.0)**.
-* **IDE:** **Visual Studio 2022**.
+* **IDE:** **Visual Studio 2026**.
 
 ### Como rodar:
 1. Clone o repositório.
