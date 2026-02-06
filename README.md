@@ -12,7 +12,7 @@ Este projeto é uma solução de **backend robusta** desenvolvida em **C#**, foc
 ## 📊 Diagrama de Classes (UML)
 O diagrama abaixo reflete a arquitetura do sistema, destacando o uso de serviços e interfaces para desacoplamento.
 
-![Diagrama UML](<img width="803" height="878" alt="Diagrama Sistema de Atendimentos drawio" src="https://github.com/user-attachments/assets/1bfa45fb-be97-412d-88f0-f8e3b0dd940f" />)
+![Diagrama UML](https://github.com/user-attachments/assets/)
 
 ---
 
