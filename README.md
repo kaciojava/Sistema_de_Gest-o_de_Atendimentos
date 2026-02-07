@@ -1,23 +1,23 @@
-﻿# 🛠️ Sistema de Gestão de Atendimentos (Help Desk)
+﻿## Sistema de Gestão de Atendimentos (Help Desk)
 
 Este projeto é uma solução de **backend robusta** desenvolvida em **C#**, focada na aplicação prática de **Programação Orientada a Objetos (POO)** e nos princípios **SOLID**. O sistema gerencia o ciclo de vida de chamados de suporte técnico, desde a triagem até a resolução final.
 
-## 👥 Integrantes do Grupo
+## Integrantes do Grupo
 * **[ERIVELTON KÁCIO]** - [https://github.com/kaciojava]
 * **[SANDERSON PEREIRA]** - [https://github.com/Snzada]
 
 
 ---
 
-## 📊 Diagrama de Classes (UML)
+## Diagrama de Classes (UML)
 O diagrama abaixo reflete a arquitetura do sistema, destacando o uso de serviços e interfaces para desacoplamento.
 
-<img width="803" height="878" alt="Diagrama Sistema de Atendimentos drawio" src="https://github.com/user-attachments/assets/84c49316-5efe-497a-ad35-05f24478449a" />
-
+<img width="1920" height="1080" alt="DIAGRAMA" src="https://github.com/user-attachments/assets/c5e5dffc-3def-4f44-ad84-39ba62f6ae25" />
 
 ---
 
-## 💎 Aplicação dos Princípios SOLID
+
+## Aplicação dos Princípios SOLID
 
 * **[S] Single Responsibility:** A classe **`Chamado`** armazena dados e histórico, enquanto a **`ChamadoService`** isola as regras de negócio e manipulação de listas.
 * **[O] Open/Closed:** Novas categorias ou tipos de usuários podem ser adicionados via herança sem modificar o funcionamento do `ChamadoService`.
@@ -27,14 +27,14 @@ O diagrama abaixo reflete a arquitetura do sistema, destacando o uso de serviço
 
 ---
 
-## 🧠 Conceitos de OO Utilizados
+## Conceitos de OO Utilizados
 * **Classe Abstrata:** `Usuario` define o contrato base para todos os perfis do sistema.
 * **Composição:** `Chamado` contém uma lista de `HistoricoChamado`, que é destruída junto com o objeto principal.
 * **Encapsulamento:** Uso de modificadores `private set` para garantir a integridade do `Status` do chamado.
 
 ---
 
-## 🚀 Tecnologias e Execução
+## Tecnologias e Execução
 * **Linguagem:** **C# (.NET 8.0)**.
 * **IDE:** **Visual Studio 2026**.
 
